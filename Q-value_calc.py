@@ -1,5 +1,4 @@
 # %%
-from matplotlib.pyplot import flag
 
 
 f = open("./data/Chen data.csv")
@@ -83,7 +82,7 @@ while i < k:
         # 该组无异常值
         for j in range(i, i + num_of_each_group):
             f.write(groups[j] + ',')
-            f.write(str(origin_value[i]) + '\n')
+            f.write(str(origin_value[j]) + '\n')
     else:
         # 存在异常值
         for j in range(i, i + num_of_each_group):
